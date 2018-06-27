@@ -16,7 +16,6 @@ export abstract class ApiServiceBase {
 
     protected getDefaultHeaders(): {[headerName: string]: any} {
         return {
-            'Accept-Encoding': 'gzip,deflate',
         };
     }
 

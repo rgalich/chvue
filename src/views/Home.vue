@@ -30,6 +30,7 @@
         <v-toolbar-title>Application</v-toolbar-title>
       </v-toolbar>
       <v-content>
+        <ingredient-form></ingredient-form>
         <router-view></router-view>
       </v-content>
       <v-footer color="indigo" app inset>
@@ -41,11 +42,13 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue';
+import IngredientForm from '@/components/IngredientForm.vue';
 
 @Component({
   components: {
     HelloWorld,
+    IngredientForm,
   },
 })
 export default class Home extends Vue {
