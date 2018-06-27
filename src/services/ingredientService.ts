@@ -9,7 +9,7 @@ export class IngredientService extends ApiServiceBase {
     public async createIngredient(ingredient: IngredientModel): Promise<number> {
         const response = await this.apiCall(async (client) => await client
                 .url('ingredient')
-                .body(ingredient)
+                .json(ingredient)
                 .post()
                 .text());
 
